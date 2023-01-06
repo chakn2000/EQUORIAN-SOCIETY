@@ -1,0 +1,183 @@
+<html>   
+<body> 
+    <head> 
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=" /> 
+        <link href="https://fonts.cdnfonts.com/css/omnes-regular" rel="stylesheet"> 
+        <link href="https://fonts.cdnfonts.com/css/stillhouse" rel="stylesheet">  
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5/css/all.min.css" rel="stylesheet"> 
+        <link href="https://fonts.cdnfonts.com/css/kt-nirma" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+        </head> 
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+       
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+    <div class = "sidetitle">
+      <h1>THE </h1><h2>EQUORIAN</h2><h1>SOCIETY</h1>  
+    </div> 
+    <br><br>
+    <a href="#">Home</a> 
+    <br><br>
+    <button class="accordion">Subjects</button>
+    <div id ="panel"> 
+        <br>
+        <a href="#">Biology</a> 
+        <br>
+        <a href="#">Computing</a>  
+        <br> 
+        <a href="#">Chemistry</a> 
+        <br>
+        <a href="#">Economics</a>  
+        <br>
+        <a href="#">Maths</a> 
+        <br>
+        <a href="#">Physics</a> 
+        
+    </div>  
+    <br> 
+    <br><br>
+    <a href="#">Contacts</a> 
+    <br><br>
+    <a href="#">About us</a> 
+    <br><br> 
+    <a href="https://www.swbgs.com/">Borlase</a>
+</div>
+<!-- Page content -->  
+  <div id="main" class="main"> 
+    
+    <div class = top> 
+      
+    <button class="openbtn" onclick="openNav()">➔</button>
+    </div>   
+    <!-- UPDATE IMG AND TITLE AND LINK SUBJECT --> 
+    <!-- UPDATE IMG AND TITLE AND LINK SUBJECT --> 
+    <!-- UPDATE IMG AND TITLE AND LINK SUBJECT --> 
+    <!-- UPDATE IMG AND TITLE AND LINK SUBJECT --> 
+    <!-- UPDATE IMG AND TITLE AND LINK SUBJECT -->
+    <!-- UPDATE IMG AND TITLE AND LINK SUBJECT -->
+      <div class = "title">  
+        <br><br>   
+      <h1>THE SCIENCE OF GAME DEVELOPMENT</h1>  
+      <center> 
+      <a href = url("computing.html")>Read</a> 
+      </center>  
+      </div>  
+
+      <div class = "box2">  
+      <br> 
+      <div class = "logo"><img src="logo.JPG" alt="Equorian logo"></div> 
+      <center><p>Welcome to the Equorian society,<br> the home of academics and critical thinkers.</p></center>
+      </div>   
+      <!--UPDATE THE IMAGE AND BACKGROUND-->  
+      <!--UPDATE THE IMAGE AND BACKGROUND-->  
+      <!--UPDATE THE IMAGE AND BACKGROUND-->  
+      <!--UPDATE THE IMAGE AND BACKGROUND-->  
+      <!--UPDATE THE IMAGE AND BACKGROUND-->  
+      <!--UPDATE THE IMAGE AND BACKGROUND--> 
+      <div class = "box5">  
+        <p>Recent articles:</p>
+        <br><br>  
+        <table cellspacing= "50"> 
+          <tr> 
+            <div class = img><td style= "background-image:url(vr.jpg)"></div><div class="description">
+              <div class="word">The Future of VR</div></div></td> 
+              
+              <div class = img><td style= "background-image:url(nano.jpg)"></div><div class="description">
+                <div class="word">Nanoparticles: What are they?</div></div></td>
+          </tr>  
+          <tr> 
+            <div class = img><td style= "background-image:url(plants.jpg)"></div><div class="description">
+              <div class="word">How Plants Breathe?</div></div></td> 
+              
+              <div class = img><td style= "background-image:url(rocket.jpg)"></div><div class="description">
+                <div class="word">NASA's Artemis program explained</div></div></td>
+          </tr>  
+        </table>
+      </div> 
+      <div class = "box4">  
+      <br> 
+      <center><p>Read interesting articles,<br>Carefully curated by our<br>passionate subject specialist members.</p></center> 
+      <div class = "logo2"><img src="mat.jpg" alt="Article image"></div> 
+      </div>   
+      <div class = "box3">  
+        <p>Subjects:</p> 
+        <br><br> 
+        <table cellspacing= "50"> 
+          <tr> 
+            <td style= "background-image:url(che.jpg)"><div class="overlay">
+              <div class="text">Chemistry</div></div></td> 
+              <td style= "background-image:url(bio.jpeg)"><div class="overlay">
+                <div class="text">Biology</div></div></td>
+          </tr>  
+          <tr> 
+            <td style= "background-image:url(phy.jpg)"><div class="overlay">
+              <div class="text">Physics</div></div></td> 
+              <td style= "background-image:url(com.jpg)"><div class="overlay">
+                <div class="text">Computing</div></div></td>
+          </tr>  
+          <tr> 
+            <td style= "background-image:url(mat.jpg)"><div class="overlay">
+              <div class="text">Mathematics</div></div></td>
+              <td style= "background-image:url(eco.webp)"><div class="overlay">
+                <div class="text">Economics</div></div></td>
+          </tr> 
+        </table> 
+        <br><br>
+        </div>  
+       
+    <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+    <div class = "footer">   
+      <br><br>
+      ©TheEquorianSociety
+    </div>
+  </div> 
+  </div> 
+  
+   
+  </div> 
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+  
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }  
+</script>
+<script>
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() { 
+  if (x.matches) {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "100%";
+  } else {
+    document.getElementById("mySidebar").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+  } 
+}
+  var x = window.matchMedia("(max-width: 900px)")
+  myFunction(x) // Call listener function at run time
+  
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+</script>
+</body>
+</html>
+
+

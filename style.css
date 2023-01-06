@@ -1,0 +1,420 @@
+body { 
+  background-color: #ececec; 
+  font-family:  'KT Nirma', sans-serif;
+  margin:0px; 
+  
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: rgb(63, 89, 241); 
+  font-weight: bold;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 25px;
+  cursor: w-resize;
+  background-color: #ececec;
+  color: rgb(0, 0, 0);
+  height:30px;
+  border: none; 
+  margin: auto; 
+  
+}
+
+.openbtn:hover {
+  color: rgb(63, 89, 241);
+} 
+
+.top{  
+  background-color: #ececec; 
+  height:38px; 
+  width:100%;  
+  position: fixed;     
+} 
+
+#main {
+  transition: margin-left .5s;
+  padding-left: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+@media screen and (max-height: 450px) {
+  #mySidebar {color:green };
+  #mySidebar  a {font-size: 18px;}
+}
+/* Style page content */
+.main { 
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding-left: 20px; 
+  padding-top: 0px; 
+  height:100%;
+  background-color: #d1d1d1;
+} 
+
+#main2 { 
+  
+  margin-top: 0%;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #ffffff;
+  color:#000000;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s; 
+  font-size: 25px; 
+  font-family: 'KT Nirma', sans-serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  color: rgb(18, 96, 185); 
+  font-weight: bold; 
+}
+
+/* Style the accordion panel. Note: hidden by default */
+#panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden; 
+  font-size: 20px;  
+  text-align: center; 
+  color: rgb(18, 96, 185);
+} 
+
+#panel:hover {
+  background-color: white; 
+  color: rgb(18, 96, 185);
+} 
+
+
+ .title  { 
+  background-image: url(gamedev.jpg); 
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat; 
+  height:85vh;  
+  width:100%; 
+}
+
+.title h1 { 
+  color:#ffffff; 
+  font-size: 7vh; 
+  font-weight:  999;    
+}   
+.title a {  
+  border-radius: 20px;
+  background: #ffffff;  
+  padding:20px;
+  text-align: center; 
+  color:rgb(170, 170, 170) ;
+  font-size: 2vh; 
+  font-weight: 50; 
+  text-decoration: none;
+}  
+ .title a:hover { 
+  color: rgb(255, 255, 255) ;
+  text-transform:bold; 
+  background-color: rgb(18, 96, 185)  ; 
+
+  }   
+
+.box2 {   
+  margin-top: 0px;
+  background-color:#ececec; 
+  background-repeat: no-repeat; 
+  height:90vh;  
+  width:100%;  
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}  
+
+.box2 p{  
+  font-size: 5vh;
+  margin-left: 0%;  
+  overflow: hidden;
+  
+} 
+.box2 img{ 
+  width: 60vh;
+  height:  60vh;
+  margin-left: 5%; 
+  overflow: hidden; 
+  border-radius: 20% ;
+}
+.logo{   
+  flex-basis: 40%;
+} 
+.box3 {  
+  background-color:#ececec ; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height:130vh;
+  width:100%;  
+}  
+
+.box3 p {  
+  font-size: 7vh; 
+  text-align: center;    
+}  
+.box3 table{  
+  width:100% ;
+  height:100%; 
+  table-layout: fixed;     
+}  
+.box3 td{  
+  position: relative;
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat; 
+  margin:auto;
+  padding:0; 
+  border-radius: 4%;
+} 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; 
+  border-radius: 4%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+td:hover .overlay {
+  opacity: 0.8; 
+  
+} 
+
+
+
+.text {
+  color: white;
+  font-size: 4vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+
+
+
+.box4 {  
+  background-color:#ececec ; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height:90vh;  
+  width:100%;  
+
+  display: flex;
+  align-items: center;
+  justify-content: center
+}   
+.box4 p{  
+  font-size: 5vh;
+  margin-left: 5%;  
+  overflow: hidden;
+  
+} 
+.box4 img{ 
+  width: 60vh;
+  height:  60vh;
+  overflow: hidden; 
+  border-radius: 20% ; 
+  display: block;
+  margin-left: auto; 
+  margin-right:0%;
+}  
+.logo2{   
+  flex-basis: 40%;
+} 
+@media only screen and (max-width: 1000px) {
+  .box4 {  
+    background-color:#ececec  ; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height:90vh;  
+    width:100%;  
+  
+    display: block;
+    align-items: center;
+    
+  }   
+  .box4 p{  
+    font-size: 5vh;
+    overflow: hidden; 
+  } 
+  .box4 img{ 
+    width: 60vh;
+    height:  60vh;
+    overflow: hidden; 
+    border-radius: 20% ; 
+    display: block;  
+    margin:auto
+  }     
+  .box2 {  
+    background-color:#ececec  ; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height:90vh;  
+    width:100%;  
+  
+    display: block;
+    align-items: center;
+    
+  }   
+  .box2 p{  
+    font-size: 5vh;
+    overflow: hidden; 
+  } 
+  .box2 img{ 
+    width: 60vh;
+    height:  60vh;
+    overflow: hidden; 
+    border-radius: 20% ; 
+    display: block;  
+    margin:auto
+  } 
+}
+ 
+.box5 {  
+  background-color:#ececec ; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height:100vh;  
+  width:100%; 
+     
+}  
+.box5 p {  
+  font-size: 8vh; 
+  text-align: center;    
+}  
+ 
+.box5 table{  
+  width:100% ;
+  height:80%; 
+  table-layout: fixed;  
+  max-width: 100%;    
+}  
+.box5 td{  
+  position: relative;
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat; 
+  margin:auto;
+  padding:0; 
+  border-radius: 4%; 
+}
+.description {
+  position: absolute;
+  bottom: 0;
+  background: #ececec;
+  color: #ececec;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0.7;
+  color: white;
+  height:40%;
+  border-radius: 4%;  
+ 
+  
+}
+td:hover .description {
+  opacity: 1;  
+} 
+.word {
+  color: rgb(0, 0, 0);
+  font-size: 3.5vh;  
+  text-align: center;  
+  margin-top:4%; 
+} 
+
+@media only screen and (max-width:800px) { 
+  .word{ 
+    font-size:2.5vh;
+  }
+  
+}
+
+  
+  
+  
+  
+
+.footer {  
+  background-color:#000000 ; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height:30vh;  
+  width:100%;  
+  color: white; 
+  text-align: center;  
+}  
+
+
+
+ 
+
+
+
+
+.sidetitle h1{ 
+  text-align: center; 
+  text-transform: uppercase;  
+  color: rgb(18, 96, 185); 
+  font-size: 2vh; 
+  font-family: 'Stillhouse', sans-serif; 
+} 
+.sidetitle h2{ 
+  text-align: center; 
+  text-transform: uppercase;  
+  color: rgb(18, 96, 185); 
+  font-size: 3vh; 
+  font-family: 'Stillhouse', sans-serif; 
+}
